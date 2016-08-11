@@ -22,17 +22,16 @@
       <li><div class="progress"></div></li>
     </ul></div>
     <div class="board__card board__card--in-progress"><h1>In Progress</h1><ul>
-<li><span class="project label label--haib" data-name="haib" data-project="HAIB"><i class="fa fa-folder-o"></i>HAIB</span> <strong>Conference stuff.</strong><br>I underestimated how much time this would take up. Still trying to get things done while I&#39;m here. </li>
-<li><span class="project label label--ops" data-name="ops" data-project="Ops"><i class="fa fa-folder-o"></i>Ops</span> <strong>Get the hghelix app starting up.</strong><br>The Helix app won&#39;t start currently. It sorta looks like it&#39;s a code problem, but it can&#39;t be, the code is exactly as it was on Heroku.<br>The error I get is this: <code>no implicit conversion of Symbol into Integer</code><br>It happens here: <code>/var/www/hghelix/releases/20160809001514/lib/routes.rb:20:in &#39;block (2 levels) in &lt;top (required)&gt;&#39;</code><br>The code that&#39;s executing is this: <code>bookmarks = Kapow.query{scope(:bookmark)}.select {|b| b<span class="project label label---user_id" data-name="-user_id" data-project=":user_id"><i class="fa fa-folder-o"></i>:user_id</span> == session<span class="project label label---user" data-name="-user" data-project=":user"><i class="fa fa-folder-o"></i>:user</span>.to_s}</code>  </li>
+<li><span class="project label label--ops" data-name="ops" data-project="Ops"><i class="fa fa-folder-o"></i>Ops</span> <strong>Get Sidekiq Running</strong>  </li>
 </ul></div>
 <div class="board__card board__card--pipeline"><h1>Pipeline</h1><ul>
-<li><span class="project label label--haib" data-name="haib" data-project="HAIB"><i class="fa fa-folder-o"></i>HAIB</span> <span class="timer" data-value="2"><i class="fa fa-clock-o"></i>2h</span> Writing additional reports for Triton. (Pair with Ryan)</li>
-<li><span class="project label label--ops" data-name="ops" data-project="Ops"><i class="fa fa-folder-o"></i>Ops</span> <span class="timer" data-value="4"><i class="fa fa-clock-o"></i>4h</span> Debugging issues with the helix app not running. Seems DB related. </li>
+<li><span class="project label label--ops" data-name="ops" data-project="Ops"><i class="fa fa-folder-o"></i>Ops</span> <span class="timer" data-value="4"><i class="fa fa-clock-o"></i>4h</span> Get Sidekiq setup and running for triton</li>
+<li><span class="project label label--s4a" data-name="s4a" data-project="S4A"><i class="fa fa-folder-o"></i>S4A</span> <span class="timer" data-value="4"><i class="fa fa-clock-o"></i>4h</span> Find out current status of work, put in time on something.</li>
 </ul></div>
 <div class="board__card board__card--tasks-this-week"><h1>Tasks This Week</h1><ul>
 <li><input class="status hidden" type="checkbox" value="0"/> Get Sidekiq running on the triton machine</li>
-<li><input class="status hidden" type="checkbox" value="0"/> Pair with Ryan on Triton reports</li>
-<li><input class="status hidden" type="checkbox" value="0"/> Get the hghelix app to stop dying on every request </li>
+<li><input class="status hidden" type="checkbox" value="1"/> Pair with Ryan on Triton reports</li>
+<li><input class="status hidden" type="checkbox" value="1"/> Get the hghelix app to stop dying on every request </li>
 <li><input class="status hidden" type="checkbox" value="1"/> Install the Postgres Extension into the database </li>
 <li><input class="status hidden" type="checkbox" value="1"/> Successfully run the script to migrate the data</li>
 <li><input class="status hidden" type="checkbox" value="1"/> Point the triton machine at the cluster redis instance </li>
